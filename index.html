@@ -24,37 +24,32 @@
       <div id="video-wrap">
         <video id="video" poster="images/background1.jpg" webkit-playsinline playsinline muted autoplay loop>
           <source src="images/mov.mp4" type="video/mp4">
-          <p>動画を再生できる環境ではありません。</p>
+          <p>お使いの環境では、背景動画が再生できません。</p>
         </video>
       </div>
       <main id="top">
-        <h1><img src="images/logo_b.png" alt="ロゴビッグ"></h1>
+        <h1><img src="images/logo_b.png" alt="アバチャンロゴ"></h1>
         <div id="sns_area">
-          <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+          <div><a href="https://twitter.com/AVACHICH"><i class="fab fa-twitter"></i></a></div>
           <div><a href="https://www.youtube.com/channel/UCcN1CZiPjRIv1tzoBtnLuLA"><i class="fab fa-youtube"></i></a></div>
           <div><a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11239921361"><i class="fab fa-instagram"></i></a></div>
         </div>
         <section>
           <h2 id="about">ABOUT<span>- ごあいさつ -</span></h2>
-          <p><span class="phead1">イ</span>ツメンを、もっと格好いい呼び方で――。姉の一声で発足したゴキゲンなチーム、それが<span>“アバランチ</span>”です。魔晄炉は破壊しません。ファイナルではないです。<br>主な活動は旅行をしたり、肉を焼いたり、床でトルティーヤを作ったり（以降、床トルティと記載）。</p>
-          <p><span class="phead2">ア</span>バチャンは、四天王の中でも最弱・みやによる「メンバーがゲームやってるの見たい」という願いから生まれたYouTubeチャンネル。<br>勝手にロゴを作成、チャンネルを開設するパワープレイにより実現しました。<br>今のところ投稿動画はすべてみや本人によるもの。メンバーがゲームやってるの見たい</p>
+          <p><span class="phead1">イ</span>ツメンを、もっと格好いい呼び方で――。姉の一声で発足したゴキゲンなチーム、それが<span>“アバランチ</span>”です。魔晄炉は破壊しません。<br>主な活動は旅行をしたり、肉を焼いたり、床でトルティーヤを作ったり（以降、床トルティと記載）。</p>
+          <p><span class="phead2">ア</span>バチャンは、四天王の中でも最弱・みやによる「メンバーがゲームやってるの見たい」という願いから生まれたYouTubeチャンネル。<br>勝手にロゴを作成、チャンネルを開設するパワープレイにより実現しました。</p>
         </section>
         <section>
           <h2 id="staff">STAFF<span>- イカれたメンバーたち- </span></h2>
           <div id="slideshow">
-            <div class="out">
-              <img src="images/stf_0.png">
-              <input type=radio name="slide" id="slide1">
-              <input type=radio name="slide" id="slide2">
-              <input type=radio name="slide" id="slide3">
-              <input type=radio name="slide" id="slide4">
-              <div class="in">
-                <label for="slide1"><span></span><a href="#1"><img src="images/stf_ane.png"></a></label>
-                <label for="slide2"><span></span><a href="#2"><img src="images/stf_acr.png"></a></label>
-                <label for="slide3"><span></span><a href="#3"><img src="images/stf_mr.png"></a></label>
-                <label for="slide4"><span></span><a href="#4"><img src="images/stf_my.png"></a></label>
-              </div>
-            </div>
+            <img loading="lazy" id="ss_src" src="images/stf_1.png">
+            <div id="ss_div"><h3>ACRY<span>- アクリ -</span></h3><br><p><span class='phead1'>公</span>衆電話をこよなく愛する、チームのイメージキャラクター。</p><p>奇跡の一枚から伝説は始まった。</p></div>
+          </div>
+          <div id="slidebtn">
+            <i class="fas fa-running" id="stf_1"></i>
+            <i class="fas fa-running" id="stf_2"></i>
+            <i class="fas fa-running" id="stf_3"></i>
+            <i class="fas fa-running" id="stf_4"></i>
           </div>
         </section>
         <section>
@@ -101,16 +96,109 @@
             ※画像はpixivFACTORY様のプレビューをお借りしております。問題があった際は掲載を中止いたします。</p>
           </div>
         </section>
+        <div id="twitter">
+          <a class="twitter-timeline" data-width="500" data-height="300" href="https://twitter.com/AVACHICH?ref_src=twsrc%5Etfw">Tweets by AVACHICH</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </main>
     </div>
-      <footer>
-        <div class="gotop">
-          <a href="#top">
-            <i class="fas fa-chevron-circle-up"></i>
-          </a>
-        </div>
-        <a href="https://www.youtube.com/channel/UCcN1CZiPjRIv1tzoBtnLuLA"><img src="images/a.png" alt="ア" class="shake-hard"></a>
-        <p>copyright 2021-2021</p>
-     </footer>
+    <footer>
+      <div class="gotop">
+        <a href="#top">
+          <i class="fas fa-chevron-circle-up"></i>
+        </a>
+      </div>
+      <a href="https://www.youtube.com/channel/UCcN1CZiPjRIv1tzoBtnLuLA"><img src="images/a.png" alt="ア" class="shake-hard"></a>
+      <p>copyright 2021-2021</p>
+    </footer>
+    <script>
+      //スライドショー
+      const stf_1 = document.getElementById("stf_1");
+      const stf_2 = document.getElementById("stf_2");
+      const stf_3 = document.getElementById("stf_3");
+      const stf_4 = document.getElementById("stf_4");
+      const ss_btn = [stf_1,stf_2,stf_3,stf_4];
+      const ss_src = ["images/stf_1.png","images/stf_2.png","images/stf_3.png","images/stf_4.png"];
+      const ss_div = [
+        "<h3>ACRY<span>- アクリ -</span></h3><br><p><span class='phead1'>公</span>衆電話をこよなく愛する、チームのイメージキャラクター。</p><p>奇跡の一枚から、アバチの伝説は始まった。</p>",
+        "<h3>TOMONE<span>- トモネ -</span></h3><br><p><span class='phead1'>頼</span>れるアバチのおねえさん。</p><p>オーガニック陰陽師アドバイザー料理研究家。</p>",
+        "<h3>MIRA<span>- ミラ -</span></h3><br><p><span class='phead1'>ア</span>バチを導くサバイバーの女神。</p><p>あらゆるえちちを取り締まる、歴戦のえちち警察。</p>",
+        "<h3>MIYA<span>- ミヤ -</span></h3><br><p><span class='phead1'>み</span>やが吊られたか……ククク、奴は四天王の中でも最弱。</p><p>宇宙の力でダサ服選手権を優勝。</p>",
+      ];
+      let ss_num = 0;
+      let ss_flag = true;
+      ss_btn[0].style.color = "rgb(51, 102, 204)";
+      
+      function slideshow_timer(){
+        if(ss_flag){
+          ss_btn[ss_num].style.color = "rgb(0, 0, 0)";
+          if(ss_num === 3){
+            ss_num = 0;
+          }
+          else{
+            ss_num++;
+          }
+          document.getElementById("ss_src").src = ss_src[ss_num];
+          document.getElementById("ss_div").innerHTML = ss_div[ss_num];
+          ss_btn[ss_num].style.color = "rgb(51, 102, 204)";
+          setTimeout(slideshow_timer, 1000);
+        }else{
+          clearTimeout(ss_exe);
+        }
+      }
+      let ss_exe = setTimeout(slideshow_timer, 1000);
+
+      stf_1.onclick = function(){
+        if(ss_flag){
+        ss_flag=!ss_flag;
+        ss_btn[1].style.color = "rgb(0, 0, 0)";
+        ss_btn[2].style.color = "rgb(0, 0, 0)";
+        ss_btn[3].style.color = "rgb(0, 0, 0)";
+        document.getElementById("ss_src").src = ss_src[0];
+        document.getElementById("ss_div").innerHTML = ss_div[0];
+        ss_btn[0].style.color = "rgb(51, 102, 204)";
+        ss_num = 0;
+        setTimeout(function(){ss_flag=!ss_flag;ss_exe = setTimeout(slideshow_timer, 1000);},2000);
+        }
+      }
+      stf_2.onclick = function(){
+        if(ss_flag){
+        ss_flag=!ss_flag;
+        ss_btn[0].style.color = "rgb(0, 0, 0)";
+        ss_btn[2].style.color = "rgb(0, 0, 0)";
+        ss_btn[3].style.color = "rgb(0, 0, 0)";
+        document.getElementById("ss_src").src = ss_src[1];
+        document.getElementById("ss_div").innerHTML = ss_div[1];
+        ss_btn[1].style.color = "rgb(51, 102, 204)";
+        ss_num = 1;
+        setTimeout(function(){ss_flag=!ss_flag;ss_exe = setTimeout(slideshow_timer, 1000);},2000);
+        }
+      }
+      stf_3.onclick = function(){
+        if(ss_flag){
+        ss_flag=!ss_flag;
+        ss_btn[0].style.color = "rgb(0, 0, 0)";
+        ss_btn[1].style.color = "rgb(0, 0, 0)";
+        ss_btn[3].style.color = "rgb(0, 0, 0)";
+        document.getElementById("ss_src").src = ss_src[2];
+        document.getElementById("ss_div").innerHTML = ss_div[2];
+        ss_btn[2].style.color = "rgb(51, 102, 204)";
+        ss_num = 2;
+        setTimeout(function(){ss_flag=!ss_flag;ss_exe = setTimeout(slideshow_timer, 1000);},2000);
+        }
+      }
+      stf_4.onclick = function(){
+        if(ss_flag){
+        ss_flag=!ss_flag;
+        ss_btn[0].style.color = "rgb(0, 0, 0)";
+        ss_btn[1].style.color = "rgb(0, 0, 0)";
+        ss_btn[2].style.color = "rgb(0, 0, 0)";
+        document.getElementById("ss_src").src = ss_src[3];
+        document.getElementById("ss_div").innerHTML = ss_div[3];
+        ss_btn[3].style.color = "rgb(51, 102, 204)";
+        ss_num = 3;
+        setTimeout(function(){ss_flag=!ss_flag;ss_exe = setTimeout(slideshow_timer, 1000);},2000);
+        }
+      }
+    </script>
   </body>
 </html>
